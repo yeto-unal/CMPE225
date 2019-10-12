@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+
+void test1(){
+	static int x=0;
+	x++;
+	cout<<"Counter with static is "<<x<<endl;
+}
+
+void test2(){
+	int x=0;
+	x++;
+	cout<<"Counter without static is "<<x<<endl;
+}
+
+main(){
+	int c;
+	for(c=0;c<5;c++)
+		test1();
+	for(c=0;c<5;c++)
+		test2();
+	return 0;		
+}
