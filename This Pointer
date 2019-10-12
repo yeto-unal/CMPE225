@@ -1,0 +1,26 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+class Test{
+	private:
+		int a=5;
+		int b;
+		char c;
+	public:
+		Test(int a,int b,char c){
+			this->b=b;
+			this->c=c;
+			cout<<"a is "<<a<<endl;
+			cout<<"a is "<<this->a<<endl;
+			cout<<"b is "<<b<<endl;
+			cout<<"b is "<<this->b<<endl;
+			cout<<"c is "<<c<<endl;
+			cout<<"c is "<<this->c<<endl;
+		}	
+};
+
+main(){
+	Test t1(6,10,'r');
+	return 0;
+}
