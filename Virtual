@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+class A{
+	public: virtual void display()
+		{cout<<"Content of bas class.\n";}
+};
+class B:public A{
+	public: void display()
+		{cout<<"Content of derived class.\n";}
+};
+int main(){
+	A *b;
+	B d;
+	b=&d;
+	b->display();
+	d.display();
+	return 0;
+}
