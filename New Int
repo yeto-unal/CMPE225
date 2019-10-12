@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+
+main(){
+	int *arr=new int;
+	int x=10;
+	*arr=x;
+	cout<<"*arr is "<<*arr<<endl;
+	cout<<"&arr is "<<&arr;
+	delete arr;
+	return 0;
+}
