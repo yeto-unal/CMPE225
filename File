@@ -1,0 +1,18 @@
+#include<iostream>
+#include<fstream>
+using namespace std;
+
+main(){
+	ifstream ifile;
+	string str;
+	ifile.open("selam.txt");
+	if(!ifile){
+		cout<<"File cannot be open! "<<endl;
+	}
+	else{
+		while(!ifile.eof()){
+			ifile>>str;
+			cout<<str<<" ";
+		}
+	}
+}
