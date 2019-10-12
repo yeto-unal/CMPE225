@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+
+class enemy {
+	public:
+	virtual	void bok()=0;
+};
+
+class yeniceri: public enemy{
+	public:
+		void bok(){
+			cout<<"tokatlandiniz"<<endl;
+		}
+		
+		
+};
+
+class atli: public enemy{
+	public:
+		void bok(){
+			cout<<"mizrak gotte!!!"<<endl;
+			
+		}
+};
+
+main(){
+	enemy *e;
+	yeniceri y;
+	atli a;
+	e=&y;
+	e->bok();
+	
+}
