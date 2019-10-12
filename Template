@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+template <class X>
+
+X summation(X a, X b){
+	return a+b;
+}
+
+main(){
+	int x=6,y=4;
+	double n=9.3,m=5.5;
+	cout<<"Int sum is: "<<summation(x,y)<<endl;
+	cout<<"Double sum is: "<<summation(n,m)<<endl;
+	//cout<<"Double and integer sum is: "<<summation(x,n); (double ve integer ayni anda isleme sokulamaz.)
+	return 0;
+}
