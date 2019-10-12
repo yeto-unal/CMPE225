@@ -1,0 +1,38 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+class person{
+	private:
+		int age;
+		string name;
+	public:
+		class address{
+		public:	
+			string country;
+			string city;
+			int id;
+		};
+		address a;
+		void getadr(){
+			cout<<"Enter country, city and id: "<<endl;
+			cin>>a.country>>a.city>>a.id;
+		}	
+		
+		void getinfo(){
+			cout<<"Enter name and age: "<<endl;
+			cin>>name>>age;
+		}
+		void showall(){
+			cout<<"Name is: "<<name<<endl<<"Age is: "<<age<<endl;
+			cout<<"Country is: "<<a.country<<endl<<"City is: "<<a.city<<endl<<"ID is: "<<a.id<<endl;
+		}
+};
+
+main(){
+	person p;
+	p.getinfo();
+	p.getadr();
+	p.showall();
+	return 0;
+}
