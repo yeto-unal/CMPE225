@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+main(){
+	int arr[4]={2,4,6,8};
+	int x;
+	try{
+		cout<<"Enter a positive number: ";
+		cin>>x;
+		if(x<0)
+			throw "Negative number is entered!";
+		else
+			cout<<10/x<<endl;
+		if(x<0 or x>3)
+			throw x;
+		else
+			cout<<"Array element: "<<arr[x]<<endl;			
+	}
+	catch(int i){
+		cout<<"Invalid index: "<<i<<endl;
+	}
+	catch(const char *s){
+		cout<<s<<endl;
+	}
+	cout<<"Continue execution";
+}
