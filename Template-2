@@ -1,0 +1,22 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+template<class T>
+T Square(T);
+
+int main(){
+	int a,b;
+	double c,d;
+	cout<<"Enter 2 integers: ";
+	cin>>a>>b;
+	cout<<"Enter 2 doubles: ";
+	cin>>c>>d;
+	cout<<"Square of integer numbers are: "<<Square(a)<<"\t"<<Square(b)<<endl;
+	cout<<"Square of double numbers are: "<<Square(c)<<"\t"<<Square(d);
+	return 0;
+}
+
+template<class T>
+T Square (T x){
+	return x*x;
+}
