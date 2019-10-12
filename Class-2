@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+
+class x{
+	private:
+		int x=5;
+		float y=11.11;
+	public:
+		void print();	
+};
+
+void x::print(){
+	cout<<"Integer number is "<<x<<endl;
+	cout<<"Float number is "<<y;
+}
+
+main(){
+	x cls;
+	cls.print();
+	return 0;
+}
