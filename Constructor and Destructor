@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+
+class deneme{
+	private:
+		int x;
+		int y;
+		int z;
+	public:
+		deneme(int a, int b){
+			x=a;
+			y=b;
+			z=0;
+		}	
+		deneme(int a, int b, int c){
+			x=a;
+			y=b;
+			z=c;
+		}
+		~deneme(){
+			static int i=1;
+			cout<<"Class "<<i<<" yok edildi !"<<endl;
+			i++;
+		}
+		int calc(){
+			if(z==0){
+				cout<<"Alan="<<x*y<<"m^2"<<endl;
+				return 0;
+		}
+			cout<<"Hacim="<<x*y*z<<"m^3"<<endl;
+		}
+};
+
+main(){
+	deneme d1(5,10);
+	deneme d2(3,7,6);
+	d1.calc();
+	d2.calc();
+	system("PAUSE");
+	return 0;
+}
