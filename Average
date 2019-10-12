@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+
+double ort (int,int,int,int);
+
+main(){
+	int m1,m2,m3,m4;
+	cout<<"Enter mid term notes: "<<endl;
+	cin>>m1>>m2>>m3>>m4;
+	cout<<"Average is "<<ort(m1,m2,m3,m4)<<endl;
+	return 0;
+}
+
+double ort (int mt1,int mt2,int mt3,int mt4){
+	int x=100;
+	if(mt1<x)
+		x=mt1;
+	if(mt2<x)
+		x=mt2;
+	if(mt3<x)
+		x=mt3;
+	if(mt4<x)
+		x=mt4;
+    return (((double)(mt1+mt2+mt3+mt4-x)/3));			
+}
